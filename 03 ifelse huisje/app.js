@@ -4,14 +4,31 @@ class App {
         let canvas = document.getElementById("canvasId");
         console.log(canvas);
 
-        let g = canvas.getContext("2d");
-        this.house(g);
+        var g = canvas.getContext("2d");
+        var color = "FFFFFF";
+        
+        this.house(g, color);
+
+        
+
+        console.log(color);
+
+        let random = Math.random();
+        console.log(random);
+
+        if(random < 0.5) {
+            color = "#FF0000";
+        }
+        else {
+            color = "FF00FFF";
+        }
+        console.log(color);
     }
 
 
 
 
-      house(g) {
+    house(g, color) {
         //dak
         g.beginPath();
         g.fillStyle = "red";
@@ -57,7 +74,7 @@ class App {
         
         //raam
         g.beginPath();
-        g.fillStyle = "#1caddf";
+        g.fillStyle = this.color;
         g.moveTo(30,40);
         g.lineTo(50,45);
         g.lineTo(50,55);

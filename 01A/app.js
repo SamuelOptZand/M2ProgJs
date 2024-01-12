@@ -12,6 +12,7 @@ class App {
         this.boolean = true;
         this.string = "hello world";
         this.nummer = 4;
+        console.log(this.darkmode);
     }
 }
 
