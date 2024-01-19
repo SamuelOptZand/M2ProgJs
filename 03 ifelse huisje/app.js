@@ -7,7 +7,7 @@ class App {
         var g = canvas.getContext("2d");
         var color = "FFFFFF";
         
-        this.house(g, color);
+        
 
         
 
@@ -23,6 +23,7 @@ class App {
             color = "FF00FFF";
         }
         console.log(color);
+        this.house(g, color);
     }
 
 
@@ -74,7 +75,7 @@ class App {
         
         //raam
         g.beginPath();
-        g.fillStyle = this.color;
+        g.fillStyle = color;
         g.moveTo(30,40);
         g.lineTo(50,45);
         g.lineTo(50,55);
