@@ -50,13 +50,22 @@ class App {
         let yyyy = reken(2,1,6);
         console.log(yyyy);
 
-    } 
+    }
 
+    newClassFunction(){
+        console.log("hello world is de nieuwClassFunction");  
+    }
 
+    anotherFunction(aArguments) {
+        console.log("kom maar met je argument");
+        console.log("hier:");
+        console.log(aArguments);
+    }
 }
 
 let app = new App();
 app.runApplication();
-
+app.newClassFunction();
+app.anotherFunction("mijn argument is iets...");
 
 
